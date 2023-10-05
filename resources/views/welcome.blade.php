@@ -133,6 +133,7 @@
                             ],
                             
                             [
+                                'areaUrl' => route('adultomayor'),
                                 'areaImg' => 'images/cursos/cuiado-adulto mayor-cauwe.jpg',
                                 'areaName' => 'Cuidado del adulto mayor',
                             ],
@@ -142,6 +143,7 @@
                                 'areaName' => 'Necesidades básicas del adulto',
                             ],
                             [
+                                'areaUrl' => route('primerosauxilios'),
                                 'areaImg' => 'images/cursos/primeros-auxilios-curso-cauwe.jpg',
                                 'areaName' => 'Primeros auxilios y RCP',
                             ],
@@ -169,7 +171,7 @@
 
 
     {{-- Clientes start --}}
-    <section id="convenios" class="section_clientes mb-0 pt-4 pb-5 position-relative" style="background-color: #ecf5f8;">
+    <section id="convenios" class="section_clientes mb-0 pt-4 pb-5 position-relative d-none" style="background-color: #ecf5f8;">
         <div class="circle_profesionals-header d-block d-lg-none d-xl-block" data-aos="fade-down-right" data-aos-duration="1500">
             <img src="{{asset('images/circle.png')}}" alt="icono circle">
         </div>

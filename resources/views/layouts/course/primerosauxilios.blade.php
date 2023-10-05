@@ -1,4 +1,4 @@
-@section('title', 'Inyectables')
+@section('title', 'Primeros auxilios y RCP')
 
 @extends('layouts.landing')
 
@@ -14,7 +14,7 @@
 
 {{-- Title curso start--}}
 @php
-    $textTitulo = "Inyectables";
+    $textTitulo = "Primeros auxilios y RCP";
 @endphp
 <script>
     localStorage.setItem("textTituloSend", "{{ $textTitulo }}");
@@ -35,23 +35,23 @@
         <div class="container-fluid col-11 content_banner__home m-auto ml-lg-0 ">
             <div class="row">
                 <div class="col-12 col-lg-4 cont-img-poople d-none d-lg-block" data-aos="fade-right">
-                    <img src="{{asset('images/cursos/banner-people-inyectables.png')}}" alt="Enfermeria">
+                    <img src="{{asset('images/cursos/banner-primerosuxilios.png')}}" alt="primerosauxilios">
                 </div>
 
                 <div class="col-12 col-md-7 col-lg-4 col-xl-5 text-white text-info_banner">
                     <h3 data-aos="fade-up" id="title-curso" class="d-none d-md-block">Nuestro curso</h3>                                       
-                    <div data-aos="fade-up" class="cont-white d-none d-md-block text-uppercase"><h3 class="text-primary" style="text-shadow: none;">En Inyectables</h3></div>
+                    <div data-aos="fade-up" class="cont-white d-none d-md-block text-uppercase"><h3 class="text-primary" style="text-shadow: none;">Primeros auxilios y RCP</h3></div>
                     <h5 class="font-secondary d-none d-md-block" data-aos="zoom-out-right" data-aos-duration="800">
                         ¡Matricúlate YA! 
                     </h5> 
                     <h3 data-aos="fade-up" id="" class="d-block d-md-none text-uppercase">
-                        Nuestra carrera de Inyectables
+                        Nuestra carrera de Primeros auxilios y RCP
                     </h3>
                 </div>
                 
                 <div class="col-sm justify-content-center cont-form" data-aos="fade-left"  data-aos-duration="800">
                     <div class="col-12 col-md-12 col-lg-12 align-self-center p-0">
-                        @include('layouts.partials.utils.formulario', ['cursoEstado'=> false,'codigoProducto' => 1, 'codigoPrograma' => 1]) 
+                        @include('layouts.partials.utils.formulario', ['cursoEstado'=> false,'codigoProducto' => 3, 'codigoPrograma' => 1]) 
                     </div>
                 </div>
             </div>
@@ -141,14 +141,23 @@
             <div class="col-12 p-4 bg-white shadow" data-aos="flip-left" data-aos-duration="800">
                 <div class="d-flex flex-wrap">
                     <div class="col-12 col-md-6 font-weight-bold">
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Conocer los principios básicos de la farmacología</p>
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Identificar las diferentes formas de presentación de los fármacos</p>
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Reconocer los principios de bioseguridad en la administración de los fármacos.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Principios básicos y normas de acción en primeros auxilios.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Reconocimiento de signos vitales.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Alteraciones de la consciencia.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Diferencias de urgencia y emergencias.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Diferencia entre golpe, fisura, fractura, esguince, luxación y Vendaje.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Inmovilización</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Métodos de traslado.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Convulsiones.</p>
                     </div>
                     <div class="col-12 col-md-6 font-weight-bold">
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Diferenciar los distintos tipos de vías de administración de medicamentos</p>
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Técnica de aplicación vía intradérmica, sub cutánea, intramuscular y endovenosa</p>
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Reconocer las complicaciones frecuentes de la administración de fármacos.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Quemaduras.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Intoxicación.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Hemorragias.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Lesiones eléctricas.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Lesiones oculares.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Obstrucción de vías.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Reanimación cardiopulmonar (RCP).</p>
                     </div>
                 </div>                
             </div>

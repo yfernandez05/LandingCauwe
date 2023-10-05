@@ -19,6 +19,8 @@ Route::resource('/', 'ClienteController')->only(['index', 'store'])->name('index
 
 //Inyectables
 Route::view('/inyectables', $baseRoute.'.inyectables')->name('inyectables');
+Route::view('/adultomayor', $baseRoute.'.adultomayor')->name('adultomayor');
+Route::view('/primerosauxilios', $baseRoute.'.primerosauxilios')->name('primerosauxilios');
 
 
 //thanks register

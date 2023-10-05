@@ -1,4 +1,4 @@
-@section('title', 'Inyectables')
+@section('title', 'Cuidado del adulto mayor')
 
 @extends('layouts.landing')
 
@@ -14,7 +14,7 @@
 
 {{-- Title curso start--}}
 @php
-    $textTitulo = "Inyectables";
+    $textTitulo = "Cuidado del adulto mayor";
 @endphp
 <script>
     localStorage.setItem("textTituloSend", "{{ $textTitulo }}");
@@ -35,23 +35,23 @@
         <div class="container-fluid col-11 content_banner__home m-auto ml-lg-0 ">
             <div class="row">
                 <div class="col-12 col-lg-4 cont-img-poople d-none d-lg-block" data-aos="fade-right">
-                    <img src="{{asset('images/cursos/banner-people-inyectables.png')}}" alt="Enfermeria">
+                    <img src="{{asset('images/cursos/banner-adultomayor.png')}}" alt="Enfermeria">
                 </div>
 
                 <div class="col-12 col-md-7 col-lg-4 col-xl-5 text-white text-info_banner">
                     <h3 data-aos="fade-up" id="title-curso" class="d-none d-md-block">Nuestro curso</h3>                                       
-                    <div data-aos="fade-up" class="cont-white d-none d-md-block text-uppercase"><h3 class="text-primary" style="text-shadow: none;">En Inyectables</h3></div>
+                    <div data-aos="fade-up" class="cont-white d-none d-md-block text-uppercase"><h3 class="text-primary" style="text-shadow: none;">Cuidado del adulto mayor</h3></div>
                     <h5 class="font-secondary d-none d-md-block" data-aos="zoom-out-right" data-aos-duration="800">
                         ¡Matricúlate YA! 
                     </h5> 
                     <h3 data-aos="fade-up" id="" class="d-block d-md-none text-uppercase">
-                        Nuestra carrera de Inyectables
+                        Nuestra carrera de Cuidado del adulto mayor
                     </h3>
                 </div>
                 
                 <div class="col-sm justify-content-center cont-form" data-aos="fade-left"  data-aos-duration="800">
                     <div class="col-12 col-md-12 col-lg-12 align-self-center p-0">
-                        @include('layouts.partials.utils.formulario', ['cursoEstado'=> false,'codigoProducto' => 1, 'codigoPrograma' => 1]) 
+                        @include('layouts.partials.utils.formulario', ['cursoEstado'=> false,'codigoProducto' => 2, 'codigoPrograma' => 1]) 
                     </div>
                 </div>
             </div>
@@ -141,14 +141,17 @@
             <div class="col-12 p-4 bg-white shadow" data-aos="flip-left" data-aos-duration="800">
                 <div class="d-flex flex-wrap">
                     <div class="col-12 col-md-6 font-weight-bold">
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Conocer los principios básicos de la farmacología</p>
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Identificar las diferentes formas de presentación de los fármacos</p>
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Reconocer los principios de bioseguridad en la administración de los fármacos.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Gerontología y envejecimiento</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Cambios Anatómicos – fisiológicos en el adulto mayor</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Reconocimiento de Signos de Vitales (teórico – práctico)</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Necesidades Básicas del adulto mayor y salud mental</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Valoración nutricional en el adulto mayor (teórico - práctico)Bioseguridad en el cuidado y Farmacología en el adulto mayor </p>
                     </div>
                     <div class="col-12 col-md-6 font-weight-bold">
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Diferenciar los distintos tipos de vías de administración de medicamentos</p>
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Técnica de aplicación vía intradérmica, sub cutánea, intramuscular y endovenosa</p>
-                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Reconocer las complicaciones frecuentes de la administración de fármacos.</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Procedimiento invasivos (sonda nasogástrica, oxigenoterapia y sondaje vesical) </p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Úlceras por presión (UPP)</p>
+                        <p class="my-3"><i class="fas fa-check-circle text-primary fa-lg">&nbsp;&nbsp;</i>Enfermedades Frecuentes por sistemas (cuidados - fundamentos) y vacunas
+                        Mecánica postural (técnicas de levantamiento, traslado del paciente de la cama a la silla de ruedas)</p>
                     </div>
                 </div>                
             </div>
